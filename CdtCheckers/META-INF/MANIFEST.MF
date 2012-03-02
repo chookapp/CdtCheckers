@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: CdtCheckers
+Bundle-SymbolicName: com.chookapp.org.CdtCheckers;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.chookapp.org.cdtcheckers.Activator
+Bundle-Vendor: Gil Barash
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.cdt.codan.core
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
+Import-Package: junit.framework;version="3.8.2",
+ org.eclipse.cdt.codan.core.cxx.model,
+ org.eclipse.cdt.codan.core.test,
+ org.eclipse.cdt.core,
+ org.eclipse.cdt.core.dom,
+ org.eclipse.cdt.core.dom.ast,
+ org.eclipse.cdt.core.index,
+ org.eclipse.cdt.core.model,
+ org.eclipse.cdt.core.testplugin.util,
+ org.eclipse.cdt.internal.core.resources,
+ org.eclipse.core.resources

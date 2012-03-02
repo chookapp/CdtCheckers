@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.cdt.codan.core.checkers">
+      <checker
+            class="com.chookapp.org.cdtcheckers.checkers.VariableShadowingChecker"
+            id="com.chookapp.org.checkers.VariableShadowingChecker"
+            name="Variable shadowing">
+         <problem
+               category="org.eclipse.cdt.codan.core.categories.ProgrammingProblems"
+               defaultEnabled="true"
+               defaultSeverity="Warning"
+               description="Looks for varibale shadowing (variables with the same name defined in different levels of a scope)"
+               id="com.chookapp.org.checkers.VariableShadowingProblem"
+               messagePattern="Variable &quot;{0}&quot; is {1} variable &quot;{2}&quot; declared in {3}"
+               name="Variable shadowing">
+         </problem>
+      </checker>
+   </extension>
+
+</plugin>
