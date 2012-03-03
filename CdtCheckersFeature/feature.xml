@@ -5,8 +5,9 @@
       version="1.0.0.qualifier"
       provider-name="Chookapp">
 
-   <description url="http://www.example.com/description">
-      [Enter Feature Description here.]
+   <description url="https://github.com/chookapp/Bracketeer">
+      CDT checkers not included by default in the CDT package:
+- Variable shadowing
    </description>
 
    <copyright url="http://www.example.com/copyright">
@@ -16,6 +17,14 @@
    <license url="http://www.example.com/license">
       [Enter License Description here.]
    </license>
+
+   <requires>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.cdt.codan.core"/>
+      <import plugin="org.eclipse.cdt.core"/>
+      <import plugin="org.eclipse.cdt.codan.core.cxx"/>
+      <import plugin="org.eclipse.core.resources"/>
+   </requires>
 
    <plugin
          id="com.chookapp.org.CdtCheckers"
